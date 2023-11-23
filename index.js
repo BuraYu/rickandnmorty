@@ -60,7 +60,6 @@ searchBar.addEventListener("submit", (event) => {
   addSearchData(input);
 });
 async function fetchSingleCharacters(x) {
-  console.log(x);
   let url = "https://rickandmortyapi.com/api/character/?name=" + x;
   try {
     const fetchRnm = await fetch(url);
