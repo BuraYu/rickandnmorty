@@ -1,9 +1,49 @@
+body {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/rick-and-morty-portal-gun-portal/rick-and-morty-portal-gun-cursor-32x32.png),
+    auto;
+  transition: 0.4s;
+}
+body:active {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/rick-and-morty-portal-gun-portal/rick-and-morty-portal-gun-pointer-32x32.png),
+    auto;
+}
+
 .card-container {
   margin-bottom: 10px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-flow: row;
+  grid-gap: 20px;
 }
+
+@media screen and (max-width: 1400px) {
+  .card-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .card-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .card-container {
+    grid-template-columns: auto;
+  }
+}
+
 .card {
   width: 300px;
   background-color: var(--color-secondary);
+  border-radius: 40px;
+}
+
+img {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .card__info {
