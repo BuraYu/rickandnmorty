@@ -1,7 +1,14 @@
 .button {
   border: none;
+  padding: 10px;
 }
 
 .button:hover {
   background-color: var(--color-secondary);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
