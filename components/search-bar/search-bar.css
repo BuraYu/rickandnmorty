@@ -5,7 +5,7 @@
 .search-bar-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -36,4 +36,8 @@
 .search-bar__icon {
   width: 20px;
   /* filter: invert(); */
+}
+
+.dark-mode-switch {
+  margin-left: 20px;
 }

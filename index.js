@@ -95,4 +95,25 @@ const addData = async function (page) {
   }
 };
 
+const darkModeSwitch = document.querySelector('[data-js="dark-mode-switch"]');
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+
+  darkModeSwitch.addEventListener("change", function () {
+    body.classList.toggle("dark-mode", this.checked);
+    changeImageSource();
+  });
+});
+
+function changeImageSource() {
+  const bannerImage = document.getElementById("banner-image");
+  console.log(bannerImage.src);
+  if (bannerImage.src == "http://127.0.0.1:5500/img/banner.png") {
+    bannerImage.src = "img/bannerdark.jpg";
+  } else {
+    bannerImage.src = "img/banner.png";
+  }
+}
+
 addData(1);

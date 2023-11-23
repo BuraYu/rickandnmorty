@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="banner">
-      <img src="img/banner.png" alt="" />
+      <img src="img/banner.png" id="banner-image" alt="" />
     </div>
 
     <main>
@@ -32,6 +32,17 @@
             />
           </button>
         </form>
+        <div class="dark-mode-switch" data-js="dark-mode-switch">
+          <label for="dark-mode-toggle" class="dark-mode-toggle"
+            >Dark Mode</label
+          >
+          <input
+            type="checkbox"
+            id="dark-mode-toggle"
+            class="dark-mode-toggle"
+            aria-label="Toggle dark mode"
+          />
+        </div>
       </div>
       <ul class="card-container" data-js="card-container"></ul>
     </main>
