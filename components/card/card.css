@@ -1,3 +1,13 @@
+body {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/rick-and-morty-portal-gun-portal/rick-and-morty-portal-gun-cursor-32x32.png),
+    auto;
+  transition: 0.4s;
+}
+body:active {
+  cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/rick-and-morty-portal-gun-portal/rick-and-morty-portal-gun-pointer-32x32.png),
+    auto;
+}
+
 .card-container {
   margin-bottom: 10px;
 }
