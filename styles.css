@@ -21,6 +21,15 @@ body {
   padding: 20px;
 }
 
+body.dark-mode {
+  background-color: #000000;
+  color: white;
+}
+
+body.dark-mode .card-container {
+  color: #000000; /* Set font color for cards in dark mode */
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -31,7 +40,4 @@ main {
 img {
   height: auto;
   max-width: 100%;
-}
-.title {
-  padding: 10px 0;
 }
