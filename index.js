@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function changeImageSource() {
   const bannerImage = document.getElementById("banner-image");
   console.log(bannerImage.src);
-  if (bannerImage.src == "http://127.0.0.1:5500/img/banner.png") {
-    bannerImage.src = "img/bannerdark.jpg";
+  if (bannerImage.src == "./img/banner.png") {
+    bannerImage.src = "./img/bannerdark.jpg";
   } else {
-    bannerImage.src = "img/banner.png";
+    bannerImage.src = "./img/banner.png";
   }
 }
 
