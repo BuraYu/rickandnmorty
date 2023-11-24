@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function changeImageSource() {
   const bannerImage = document.getElementById("banner-image");
   console.log(bannerImage.src);
-  if (bannerImage.src == "./img/banner.png") {
+  if (bannerImage.src.includes("/img/banner.png")) {
     bannerImage.src = "./img/bannerdark.jpg";
   } else {
     bannerImage.src = "./img/banner.png";
